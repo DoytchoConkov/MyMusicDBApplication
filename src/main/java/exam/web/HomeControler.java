@@ -30,7 +30,6 @@ public class HomeControler {
         }
       model.addAttribute("albums", this.albumService.viewAll());
       model.addAttribute("totalCopies", this.albumService.getAllCopies());
-
         return "home";
     }
 }

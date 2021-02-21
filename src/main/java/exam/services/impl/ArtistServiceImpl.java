@@ -6,7 +6,7 @@ import exam.repositories.ArtistRepository;
 import exam.services.ArtistService;
 import org.springframework.stereotype.Service;
 
-import static constants.Carriers.*;
+import static exam.constants.Carriers.*;
 
 @Service
 public class ArtistServiceImpl implements ArtistService {
@@ -26,7 +26,7 @@ public class ArtistServiceImpl implements ArtistService {
                         artist.setCarrierInformation(METALLICA);
                         break;
                     case Madonna:
-                        artist.setCarrierInformation(MADONA);
+                        artist.setCarrierInformation(MADONNA);
                         break;
                     case Queen:
                         artist.setCarrierInformation(QUEEN);

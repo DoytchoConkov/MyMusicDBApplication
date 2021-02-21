@@ -7,7 +7,7 @@
 </header>
 <main class="p-5 align-content-center bg-blur my-main">
     <h2 class="text-light border-bottom"
-        th:text="|Total sold copies of all albums: ${totalCopies}|"></h2>
+        th:text="'Total sold copies of all albums: '+(${totalCopies} ?: '0')"></h2>
     <div class="row">
         <th:block th:each="album : ${albums}" th:object="${album}">
             <div class="col-md-3">
