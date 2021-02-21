@@ -22,13 +22,13 @@ public class ArtistServiceImpl implements ArtistService {
             for (ArtistName artistName : ArtistName.values()) {
                 Artist artist = new Artist(artistName);
                 switch (artistName) {
-                    case Metallica:
+                    case METALLICA:
                         artist.setCarrierInformation(METALLICA);
                         break;
-                    case Madonna:
+                    case MADONNA:
                         artist.setCarrierInformation(MADONNA);
                         break;
-                    case Queen:
+                    case QUEEN:
                         artist.setCarrierInformation(QUEEN);
                         break;
                 }
